@@ -12,7 +12,7 @@ Obsidian Plugin
 
 Adds a copy icon before each legal provision, allowing you to copy it with a single click.
 
-Uses regular expressions to match patterns such as “Article *” or numeric formats like “1.”.
+Uses regular expressions to match patterns such as “第*条” or numeric formats like “1.”.
 
 Also works during link previews.
 
