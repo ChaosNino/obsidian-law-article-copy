@@ -1,6 +1,19 @@
+/* 定义段落的样式：首行缩进2个字符 */
+.law-article-line {
+  text-indent: 2em; /* 2em 等于两个中文字符的宽度 */
+}
+
 .law-copy-btn {
   cursor: pointer;
-  margin-right: 6px;
+  
+  /* 【核心修改】如下设置是为了让图标“占用”掉缩进的空间 */
+  display: inline-block;  /* 必须设置为块级或行内块才能设置宽度 */
+  width: 2em;             /* 按钮宽度设为2字符，刚好填满缩进的空隙 */
+  margin-left: -2em;      /* 使用负边距把按钮拉回最左侧 */
+  text-align: center;     /* 让图标在2字符的宽度内居中，或者用 left 靠左 */
+  text-indent: 0;         /* 防止图标自己也被缩进 */
+  margin-right: 0;        /* 去掉原本的右边距，因为现在是用宽度控制距离 */
+  
   opacity: 0.5;
   user-select: none;
 }
