@@ -1,0 +1,10 @@
+.law-copy-btn {
+  cursor: pointer;
+  margin-right: 6px;
+  opacity: 0.5;
+  user-select: none;
+}
+
+.law-copy-btn:hover {
+  opacity: 1;
+}
