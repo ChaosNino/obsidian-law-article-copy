@@ -122,6 +122,9 @@ module.exports = class LawArticleCopyPlugin extends Plugin {
             new Notice("复制失败");
           }
         };
+        
+        // 给当前段落增加一个类名，方便CSS控制缩进
+        p.classList.add("law-article-line");
 
         p.prepend(btn);
       });
